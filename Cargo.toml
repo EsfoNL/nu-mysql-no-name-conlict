@@ -1,0 +1,14 @@
+[package]
+name = "nu_plugin_mysql"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+futures = "0.3.30"
+nu-plugin = "0.92.2"
+nu-protocol = "0.92.2"
+rayon = "1.10.0"
+serde = { version = "1.0.198", features = ["derive"] }
+sqlx = { version = "0.7.4", features = ["mysql", "runtime-tokio"] }
+tokio = { version = "1.37.0", features = ["full"] }
+typetag = "0.2.16"
